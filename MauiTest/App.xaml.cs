@@ -13,7 +13,7 @@
             //NPage.BarTextColor = Colors.White;
             //MainPage = NPage;
 
-            MainPage = new FlyoutPageDemo();
+            MainPage = new TabbedPageDemo();
         }
     }
 }
