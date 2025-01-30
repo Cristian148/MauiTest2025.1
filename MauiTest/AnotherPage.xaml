@@ -4,11 +4,12 @@
              x:Class="MauiTest.AnotherPage"
              Title="Another Page">
     <VerticalStackLayout
-
+        Spacing="25"
         VerticalOptions="Center"
             HorizontalOptions="Center">
         <Label
-            Text="Another page!" />
+            Text="Another page s!"
+            FontSize="48" />
 
         <Button Text="Return"
                 Clicked="Button_Clicked" ></Button>
