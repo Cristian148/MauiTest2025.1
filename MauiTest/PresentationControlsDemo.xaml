@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTest.PresentationControlsDemo"
+             Title="PresentationControlsDemo">
+    <VerticalStackLayout>
+        <BoxView
+            Color="Navy"
+            HeightRequest="200">
+            
+        </BoxView>
+        
+        <Ellipse Fill="Yellow" 
+                 HeightRequest="200" 
+                 WidthRequest="200"
+                 Margin="10,-100,8,5" Stroke="Red" StrokeThickness="10"/>
+        <Label Text="Cristian Abbate" TextColor="Black" 
+               FontSize="Title" 
+               HorizontalTextAlignment="Center"
+               FontAttributes="Bold"/>
+
+        <Line Stroke="Purple" X1="0" Y1="1" X2="500" Y2="0" StrokeThickness="10"/>
+    </VerticalStackLayout>
+</ContentPage>
