@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MauiTest.CommandsControlsDemo"
+    Title="CommandsControlsDemo">
+    <ScrollView>
+        <VerticalStackLayout Spacing="5"
+                         VerticalOptions="Center"
+            HorizontalOptions="Center">
+
+            <Button
+            x:Name="btnTest"
+            Text="Click me"
+            Clicked="btnTest_Clicked" />
+            <ImageButton
+            Source="dotnet_bot.svg"
+            Clicked="btnTest_Clicked" />
+
+            <Frame>
+                <VerticalStackLayout>
+                    <RadioButton CheckedChanged="RadioButton_CheckedChanged"
+                             GroupName="Genero" Content="Hombre" />
+                    <RadioButton CheckedChanged="RadioButton_CheckedChanged"
+                                 GroupName="Genero" Content="Mujer" />
+                </VerticalStackLayout>
+            </Frame>
+            <Frame>
+                <VerticalStackLayout>
+
+                    <RadioButton CheckedChanged="RadioButton_CheckedChanged"
+                                 GroupName="Equipo" Content="Unión" />
+                    <RadioButton  GroupName="Equipo" Content="Colón" />
+                </VerticalStackLayout>
+            </Frame>
+            <SwipeView>
+                <SwipeView.LeftItems>
+                    <SwipeItems>
+                        <SwipeItem
+                            BackgroundColor="LightGreen"
+                            IconImageSource="dotnet_bot.svg"
+                            Invoked="SwipeItem_Invoked"
+                            Text="Favorite" />
+                        <SwipeItem
+                            BackgroundColor="LightPink"
+                            IconImageSource="dotnet_bot.svg"
+                            Invoked="SwipeItem_Invoked"
+                            Text="Delete" />
+                    </SwipeItems>
+                </SwipeView.LeftItems>
+
+                <Grid
+                        BackgroundColor="LightGray"
+                        HeightRequest="60"
+                        WidthRequest="300">
+                    <Label
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Swipe Right"
+                        VerticalOptions="Center" />
+                </Grid>
+            </SwipeView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
