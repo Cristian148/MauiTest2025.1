@@ -1,4 +1,7 @@
-﻿namespace MauiTest
+﻿using MauiTest.BindingDemo;
+using MauiTest.MVVM.Views;
+
+namespace MauiTest
 {
     public partial class App : Application
     {
@@ -13,7 +16,7 @@
             //NPage.BarTextColor = Colors.White;
             //MainPage = NPage;
 
-            MainPage = new NavigationPage(new BindingDemo2());
+            MainPage = new NavigationPage(new PersonView());
         }
     }
 }
