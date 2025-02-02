@@ -63,10 +63,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="BindingDemo\BindingDemo2.xaml.cs">
+	    <DependentUpon>BindingDemo2.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="ActivityControlsDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="AnotherPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="BindingDemo\BindingDemo2.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="CollectionsControlsDemo.xaml">

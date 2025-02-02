@@ -4,7 +4,7 @@
              x:Class="MauiTest.CollectionsControlsDemo"
              Title="CollectionsControlsDemo">
     <VerticalStackLayout>
-        <CarouselView>
+        <!--<CarouselView>
             <CarouselView.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>mono</x:String>
@@ -28,6 +28,50 @@
                     </VerticalStackLayout>
                 </DataTemplate>
             </CarouselView.ItemTemplate>
-        </CarouselView>
+        </CarouselView>-->
+
+        <!--<ListView HasUnevenRows="True" SeparatorVisibility="None">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>mono</x:String>
+                    <x:String>monodroid</x:String>
+                    <x:String>monotouch</x:String>
+                    <x:String>monorail</x:String>
+                    <x:String>monodevelop</x:String>
+                    <x:String>monotone</x:String>
+                    <x:String>monopoly</x:String>
+                    <x:String>monomodal</x:String>
+                    <x:String>mononucleosis</x:String>
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <VerticalStackLayout Margin="10">
+                            <Frame WidthRequest="200" VerticalOptions="Center" Padding="10" Margin="10" BackgroundColor="Silver" HeightRequest="80">
+
+                                <Label FontSize="20" FontAttributes="Bold" TextColor="Purple" Text="{Binding .}" />
+                            </Frame>
+                        </VerticalStackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>-->
+
+        <Picker>
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>mono</x:String>
+                    <x:String>monodroid</x:String>
+                    <x:String>monotouch</x:String>
+                    <x:String>monorail</x:String>
+                    <x:String>monodevelop</x:String>
+                    <x:String>monotone</x:String>
+                    <x:String>monopoly</x:String>
+                    <x:String>monomodal</x:String>
+                    <x:String>mononucleosis</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
     </VerticalStackLayout>
 </ContentPage>
