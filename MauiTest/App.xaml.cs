@@ -13,7 +13,7 @@
             //NPage.BarTextColor = Colors.White;
             //MainPage = NPage;
 
-            MainPage = new NavigationPage(new ActivityControlsDemo());
+            MainPage = new NavigationPage(new CollectionsControlsDemo());
         }
     }
 }
