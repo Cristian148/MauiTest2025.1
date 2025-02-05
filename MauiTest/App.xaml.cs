@@ -16,7 +16,7 @@ namespace MauiTest
             //NPage.BarTextColor = Colors.White;
             //MainPage = NPage;
 
-            MainPage = new NavigationPage(new PersonView());
+            MainPage = new NavigationPage(new PeopleView());
         }
     }
 }
